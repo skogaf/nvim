@@ -33,3 +33,4 @@ opt.smartcase = true
 -- wai guan
 opt.termguicolors = true
 opt.signcolumn = "yes"
+vim.cmd[[colorscheme tokyonight-moon]]

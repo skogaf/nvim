@@ -22,3 +22,7 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- save file
 keymap.set("n", "W", ":w<CR>")
 keymap.set("n", "S", ":wq<CR>")
+
+-- ---------- Plugins ---------- ---
+-- nvim-tree
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
