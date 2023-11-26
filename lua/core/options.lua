@@ -15,6 +15,7 @@ opt.wrap = false
 
 -- guang biao hang
 opt.cursorline = true
+opt.scrolloff = 999
 
 -- qi yong guang biao
 opt.mouse:append("a")
