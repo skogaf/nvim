@@ -16,7 +16,7 @@ local packer_bootstrap = ensure_packer()
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins-setup.lua source <afile> | PackerInstall
+    autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
   augroup end
 ]])
 
@@ -57,6 +57,11 @@ return require('packer').startup(function(use)
 
   use('akinsho/bufferline.nvim')
   use('lewis6991/gitsigns.nvim')
+
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   if packer_bootstrap then
     require('packer').sync()

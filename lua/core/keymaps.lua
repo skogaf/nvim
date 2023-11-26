@@ -30,3 +30,4 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 -- tab buffer
 keymap.set("n", "<leader>l", ":bnext<CR>")
 keymap.set("n", "<leader>h", ":bprevious<CR>")
+keymap.set("n", "<leader>q", ":bd<CR>")
