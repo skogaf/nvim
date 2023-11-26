@@ -20,9 +20,13 @@ keymap.set("n", "<leader>sq", "<C-w>q") -- quit split window
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- save file
-keymap.set("n", "W", ":w<CR>")
-keymap.set("n", "S", ":wq<CR>")
+keymap.set("n", "W", ":wq<CR>")
+keymap.set("n", "S", ":w<CR>")
+keymap.set("n", "Q", ":q!<CR>")
 
 -- ---------- Plugins ---------- ---
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+-- tab buffer
+keymap.set("n", "<leader>l", ":bnext<CR>")
+keymap.set("n", "<leader>h", ":bprevious<CR>")

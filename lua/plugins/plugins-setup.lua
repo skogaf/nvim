@@ -16,7 +16,7 @@ local packer_bootstrap = ensure_packer()
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
+    autocmd BufWritePost plugins-setup.lua source <afile> | PackerInstall
   augroup end
 ]])
 
@@ -54,6 +54,9 @@ return require('packer').startup(function(use)
 
   use('numToStr/Comment.nvim')
   use('windwp/nvim-autopairs')
+
+  use('akinsho/bufferline.nvim')
+  use('lewis6991/gitsigns.nvim')
 
   if packer_bootstrap then
     require('packer').sync()
